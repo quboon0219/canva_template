@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    environment:
+      - PORT=4242
+      - JWT_SECRET=${JWT_SECRET}
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+    volumes:
+      - ./server/uploads:/app/uploads
+      - sqlite-data:/app
+    ports:
+      - "4242:4242"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - server
+
+volumes:
+  sqlite-data:

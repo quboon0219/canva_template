@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "title": "Minimal Business Flyer",
+    "thumbnail": "https://picsum.photos/seed/flyer1/800/600",
+    "price": 5,
+    "description": "Clean, modern flyer for businesses. A4 layout.",
+    "tags": [
+      "business",
+      "flyer",
+      "minimal"
+    ],
+    "elements": [
+      {
+        "type": "text",
+        "text": "Your Business Name",
+        "x": 50,
+        "y": 40,
+        "w": 300,
+        "h": 60,
+        "fontSize": 28,
+        "fontFamily": "sans-serif"
+      },
+      {
+        "type": "rect",
+        "x": 20,
+        "y": 120,
+        "w": 400,
+        "h": 200,
+        "bg": "#f3e8ff"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Pastel Instagram Post",
+    "thumbnail": "https://picsum.photos/seed/post1/800/800",
+    "price": 3,
+    "description": "Square IG post with pastel theme.",
+    "tags": [
+      "social",
+      "instagram",
+      "pastel"
+    ],
+    "elements": [
+      {
+        "type": "text",
+        "text": "Sale 30% OFF",
+        "x": 60,
+        "y": 60,
+        "w": 200,
+        "h": 80,
+        "fontSize": 36,
+        "fontFamily": "sans-serif"
+      }
+    ]
+  }
+]
